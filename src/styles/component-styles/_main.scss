@@ -1,0 +1,257 @@
+@import "../abstracts/fonts";
+@import "../abstracts/colors";
+/*
+1. Hero Section
+2. About/Summary section
+3. Facts section
+4. Donate Section
+*/
+////=================1. Hero Section
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10rem;
+    width: 100vw;
+    height: 75vh;
+    background-image: url("../../pics/pexels-swapnil-sharma-3704162.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: $primaryFont;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border: 5px solid $green;
+    color: $gray;
+    text-shadow: 1px 1px 3px $gray-shadow;
+    background: $background-opacity;
+    border-radius: 15%;
+    margin: 1rem;
+}
+
+.hero-donate-btn {
+    z-index: 2;
+    bottom: -65px;
+    position: relative;
+    border: 12px solid $green;
+    border-radius: 50px;
+    padding: 1rem 4rem;
+    font-size: 2rem;
+    color: $green;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: $light-tan-opac;
+}
+
+.hero-donate-btn:after {
+    content: "";
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.hero-donate-btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.hero-donate-btn-wrapper {
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+}
+
+
+@media (min-width: 380px) {
+    .hero-heading{
+      font-size: 1.9rem;
+      margin: 1rem;
+      border-radius: 25px;
+    }
+
+    #hero-section {
+        justify-content: center;
+        height: 70vh;
+    }
+}
+
+@media (min-width: 500px) {
+    .hero-heading{
+      font-size: 2.1rem;
+      padding: 1rem;
+    }
+
+    #hero-section {
+        justify-content: space-between;
+        height: 60vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .hero-donate-btn {
+        padding: 1rem 6rem;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 950px) {
+    .hero-heading{
+      font-size: 2.2rem;
+      padding: 5rem ;
+      margin: 1rem 10rem;
+    }
+
+    #hero-section {
+        justify-content: center;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .hero-donate-btn {
+        padding: 1rem 8rem;
+        font-size: 4rem;
+        font-weight: 500;
+    }
+}
+
+
+
+////=================2. About/Summary section
+#about-summary-section{
+    padding-top: 4rem;
+    background-color: $gray;
+    color: white;
+}
+
+.about-h1 {
+    color: $light-tan;
+}
+
+////=================3. Facts sectio
+#facts-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-tan;
+}
+
+.facts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: $secondayFont;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $gray;
+    width: 90%;
+}
+
+.format-fix-1a{
+    display: flex;
+    justify-content: center;
+}
+
+.format-fix-1b {
+    margin-top: .8rem;
+}
+
+.emphasis-1 {
+    font-size: 4.7rem;
+    color: $green;
+}
+
+.emphasis-2 {
+    font-size: 2.7rem;
+    color: $green;
+}
+
+.divider {
+    display: inline-block;
+    width: 90%;
+    height: 1px;
+    border-top: 2px solid $green;
+}
+@media (min-width: 550px) {
+
+}
+@media (min-width: 950px) {
+
+}
+////=================4. Donate Section
+#donate-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $light-tan;
+}
+
+.donate-card-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 80%;
+    background-color: $gray;
+    border-radius: 25px;
+}
+
+.donate-card-heading{
+    display: inline-block;
+    width: 90%;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem 0rem ;
+}
+
+.fa-hand-holding-heart{
+    font-size: 2.5rem;
+}
+
+.donate-card-span {
+    padding: .5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: $secondayFont;
+}
+
+.donate-card-btn {
+    display: inline;
+    font-size: 1.3rem;
+    border: 8px solid $green;
+    border-radius: 50px;
+    padding: .3rem 1.7rem;
+    margin: 1rem 0rem;
+    color: $green;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: $light-tan;
+}
+
+.donate-link {
+    color: $green;
+}
+
+#donate-article p {
+    color: $gray;
+}
+@media (min-width: 550px) {
+
+}
+@media (min-width: 950px) {
+
+}
