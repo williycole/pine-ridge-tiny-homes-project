@@ -16,13 +16,13 @@ function Navbar() {
   let regMenu =
       <ul className="nav-desktop-ul">
          <span className="spacer"/>
-         <a href="#donate-card-btn" className="nav-link">
-          <li className="link-text">About</li>
-        </a>
-        <span className="spacer"/>
-        <a href="#donate-card-btn" className="nav-link">
-          <li className="link-text">Donate</li>
-        </a>
+            <a href="#about-summary-section" className="nav-link">
+              <li className="link-text">About</li>
+            </a>
+          <span className="spacer"/>
+            <a href="#donate-section" className="nav-link">
+              <li className="link-text">Donate</li>
+            </a>
         {/* <a href="#donate-card-btn" className="nav-link">
           <li className="link-text">Contact</li>
         </a> */}
@@ -32,16 +32,18 @@ function Navbar() {
   if(showMenu){
       mobileMenu =
       <ul className="nav-mobile-ul">
-        <a href="#donate-card-btn" className="nav-link">
-          <li className="link-text">About</li>
-        </a>
-        <a href="#donate-card-btn" className="nav-link">
-          <li className="link-text">Donate</li>
-        </a>
+         <span className="spacer"/>
+            <a href="#about-summary-section" className="nav-link">
+              <li className="link-text">About</li>
+            </a>
+          <span className="spacer"/>
+            <a href="#donate-section" className="nav-link">
+              <li className="link-text">Donate</li>
+            </a>
         {/* <a href="#donate-card-btn" className="nav-link">
           <li className="link-text">Contact</li>
         </a> */}
-      </ul>
+      </ul>;
   }
 
   return (
