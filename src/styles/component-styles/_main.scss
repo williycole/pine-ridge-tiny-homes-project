@@ -10,38 +10,36 @@
 #hero-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
-    padding-top: 10rem;
-    width: 100vw;
+    padding-top: 3rem;
+    width: 100%;
     height: 75vh;
-    background-image: url("../../pics/pexels-swapnil-sharma-3704162.jpg");
-    background-size: cover;
+    background-image: url("../../pics/riley-pitzen-QVYvacrDQqM-unsplash.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(152, 160, 153, 0.7);
+    background-size: auto;
     background-repeat: no-repeat;
+    background-position: 90% 62%;
 }
 
 .hero-heading{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    border-top: 3px solid $light-tan-opac;
+    border-bottom: 3px solid $light-tan-opac;
     font-family: $primaryFont;
+    z-index: 2;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    text-align: center;
     text-transform: uppercase;
-    border: 5px solid $green;
     color: $gray;
     text-shadow: 1px 1px 3px $gray-shadow;
-    background: $background-opacity;
-    border-radius: 15%;
-    margin: 1rem;
+    margin: 5rem 2rem;
 }
 
 .hero-donate-btn {
     z-index: 2;
-    bottom: -65px;
-    position: relative;
     border: 12px solid $green;
-    border-radius: 50px;
+    border-radius: 20px;
     padding: 1rem 4rem;
     font-size: 2rem;
     color: $green;
@@ -50,16 +48,6 @@
     background: $light-tan-opac;
 }
 
-.hero-donate-btn:after {
-    content: "";
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px!important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-}
 .hero-donate-btn:active:after {
     padding: 0;
     margin: 0;
@@ -73,55 +61,24 @@
     justify-content: center;
 }
 
-
-@media (min-width: 380px) {
-    .hero-heading{
-      font-size: 1.9rem;
-      margin: 1rem;
-      border-radius: 25px;
-    }
-
-    #hero-section {
-        justify-content: center;
-        height: 70vh;
-    }
-}
-
 @media (min-width: 500px) {
-    .hero-heading{
-      font-size: 2.1rem;
-      padding: 1rem;
-    }
-
     #hero-section {
-        justify-content: space-between;
-        height: 60vh;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        padding-top: 6rem;
+    }
+    .hero-heading{
+      font-size: 2.5rem;
+      width: 50%;
     }
     .hero-donate-btn {
-        padding: 1rem 6rem;
-        font-size: 3rem;
-        font-weight: 500;
+      padding: 1rem 6rem;
+      font-size: 3rem;
+      font-weight: 500;
     }
 }
-
-@media (min-width: 950px) {
+@media (min-width: 1000px) {
     .hero-heading{
-      font-size: 2.2rem;
-      padding: 5rem ;
-      margin: 1rem 10rem;
+      font-size: 3rem;
     }
-
-    #hero-section {
-        justify-content: center;
-        height: 100vh;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
     .hero-donate-btn {
         padding: 1rem 8rem;
         font-size: 4rem;
@@ -129,19 +86,24 @@
     }
 }
 
-
-
 ////=================2. About/Summary section
 #about-summary-section{
-    padding-top: 4rem;
     background-color: $gray;
     color: white;
 }
 
-.about-h1 {
+.about-h1, .about-p {
+    width: 70%;
     color: $light-tan;
 }
-
+@media (min-width: 768px) {
+    .summary-section-h1{
+        font-size: 3.5rem;
+    }
+    .summary-section-p {
+        font-size: 1.8rem;
+    }
+}
 ////=================3. Facts sectio
 #facts-section {
     display: flex;
@@ -160,6 +122,12 @@
     font-weight: 600;
     color: $gray;
     width: 90%;
+}
+
+@media (min-width: 768px) {
+    .facts {
+        font-size: 1.8rem;
+    }
 }
 
 .format-fix-1a{
@@ -183,29 +151,28 @@
 
 .divider {
     display: inline-block;
-    width: 90%;
+    width: 80%;
     height: 1px;
     border-top: 2px solid $green;
 }
-@media (min-width: 550px) {
-
-}
-@media (min-width: 950px) {
-
+@media (min-width: 1000px) {
+    #about-summary-section{
+        padding: 4rem;
+    }
 }
 ////=================4. Donate Section
 #donate-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $light-tan;
+    background-color: $dark-tan;
 }
 
 .donate-card-wrapper {
     display: flex;
     justify-content: center;
     padding: 1rem;
-    width: 80%;
+    width: 15rem;
     background-color: $gray;
     border-radius: 25px;
 }
@@ -233,7 +200,7 @@
     display: inline;
     font-size: 1.3rem;
     border: 8px solid $green;
-    border-radius: 50px;
+    border-radius: 20px;
     padding: .3rem 1.7rem;
     margin: 1rem 0rem;
     color: $green;
@@ -246,12 +213,36 @@
     color: $green;
 }
 
-#donate-article p {
-    color: $gray;
+.donation-article-p{
+    font-family: $secondayFont;
+    font-weight: 600;
+    width: 80%;
+    color: #333333;
+    padding: 3rem;
 }
 @media (min-width: 550px) {
+    .donate-card-heading{
+        font-size: 2rem;
+    }
 
+    .fa-hand-holding-heart{
+        font-size: 2.8rem;
+    }
+
+    .donate-card-wrapper {
+        width: 25rem;
+    }
+
+    .donation-article-p{
+        font-size: 2rem;
+     }
 }
-@media (min-width: 950px) {
-
+@media (min-width: 1000px) {
+    .donation-article-p{
+        width: 80%;
+        padding: 5rem;
+    }
+    .donate-card-wrapper {
+        width: 80%;
+    }
 }

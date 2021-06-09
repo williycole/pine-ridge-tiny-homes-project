@@ -8,11 +8,12 @@ function Main (){
         return (
             <main id="main-content-wrapper">
                 <section id="hero-section">
+                    <div className="flex-container-wrapper">
                         <h1 className="hero-heading">
-                           Pine ridge Reservation needs our help
-                           providing housing to families on the most
-                           impoverished reservation in the US.
+                            Pine ridge Reservation needs our help
                         </h1>
+                    </div>
+
                     <div className="hero-donate-btn-wrapper">
                         <a href="https://www.paypal.com/paypalme/RezTinyHome?locale.x=en_US&fbclid=IwAR0CDMTEUgnqjoKgfmhMhRHAR6251SWe7h_yUL55JYe5Zcf_gMuKcawXPQc" className="donate-link">
                             <button className="hero-donate-btn">
@@ -22,16 +23,23 @@ function Main (){
                     </div>
                 </section>
                 <section id="about-summary-section">
-                    <h1 className="about-h1">
-                        About Pine Ridge
-                    </h1>
-                    <p>
-                        This is the greatest humanitarian crisis in the Unites States today.
-                    </p>
-                    <p>
-                        The Sioux of Pine Ridge have endured the harshest conditions of human
-                        suffering in the Unites States for over 100 years.
-                    </p>
+                    <div className="flex-container-wrapper">
+                        <h1 className="summary-section-h1">
+                         About Pine Ridge
+                        </h1>
+                    </div>
+                    <div className="flex-container-wrapper">
+                        <p className="summary-section-p">
+                            This is the greatest humanitarian crisis in the Unites States today.
+                        </p>
+                    </div>
+                    <div className="flex-container-wrapper">
+                        <p className="summary-section-p">
+                            The Sioux of Pine Ridge have endured the harshest conditions of human
+                            suffering in the Unites States for over 100 years.
+                        </p>
+                    </div>
+
                 </section>
                 <section id="facts-section">
                      <aside className="facts">
@@ -55,33 +63,28 @@ function Main (){
                     <div className="donate-card-wrapper">
                         <div id="donate-card">
                             <h2 className="donate-card-heading">
-                                Please help by donating to and sharing the Pine Ridge Tine Home Project
+                                Please help by donating to, and sharing the Pine Ridge Tiny Homes Project
                             </h2>
                             <a href="https://www.paypal.com/paypalme/RezTinyHome?locale.x=en_US&fbclid=IwAR0CDMTEUgnqjoKgfmhMhRHAR6251SWe7h_yUL55JYe5Zcf_gMuKcawXPQc" className="donate-link">
                                 <button className="donate-card-btn">
-                                    {/* <i className="fas fa-hand-holding-heart">
-                                        <span className="donate-card-span">
-                                            Donate
-                                        </span>
-                                    </i> */}
-                                <FontAwesomeIcon
-                                    icon={faHandHoldingHeart} >
-                                        <span className="donate-card-span">
-                                            Donate
-                                        </span>
-                                </FontAwesomeIcon>
+                                    <FontAwesomeIcon icon={faHandHoldingHeart} />
+                                    <span className="donate-card-span">
+                                        Donate
+                                    </span>
                                 </button>
                             </a>
                         </div>
                     </div>
 
                     <article id="donation-article">
-                        <p>
-                            All donations help support the conversion of shipping containers into cozy,
-                            energy-efficient, tornado-proof homes, and transport them to Pine Ridge, South
-                            Dakota to eas the stress of homelessness and overpopulated households on the reservation.
-                            Any and all Help is greatly appreciated!
-                        </p>
+                        <div className="flex-container-wrapper">
+                            <p className="donation-article-p">
+                                All donations help support the conversion of shipping containers into cozy,
+                                energy-efficient, tornado-proof homes, and transport them to Pine Ridge, South
+                                Dakota to ease the stress of homelessness and overpopulated households on the reservation.
+                                Any and all Help is greatly appreciated!
+                            </p>
+                        </div>
                     </article>
                 </section>
             </main>

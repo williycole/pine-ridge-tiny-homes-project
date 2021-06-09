@@ -15,9 +15,11 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false)
   let regMenu =
       <ul className="nav-desktop-ul">
+         <span className="spacer"/>
          <a href="#donate-card-btn" className="nav-link">
           <li className="link-text">About</li>
         </a>
+        <span className="spacer"/>
         <a href="#donate-card-btn" className="nav-link">
           <li className="link-text">Donate</li>
         </a>
