@@ -1,20 +1,17 @@
-import React  from 'react'
-import './styles/App.scss';
+import React from 'react'
+import Header from './components/header-nav-footer/Header'
 import Main from './components/Main';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Footer from './components/header-nav-footer/Footer';
 
-
-class App extends React.Component {
-  render() {
+//Change to functional component
+function App() {
     return (
-      <div className="App">
-        <Navbar />
+      <div id="main-app-container">
+        <Header />
         <Main />
         <Footer />
       </div>
     );
-  }
 }
 
 export default App;

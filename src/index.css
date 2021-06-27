@@ -1,0 +1,150 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+___________________________
+Directory:
+    0. General Base Styles & Animations
+    1. Header/Nav
+    2. About Section
+    3. Footer Section
+    4. Blog Styles
+___________________________
+*/
+
+@layer components {
+/* ____________0. General Base Styles & Animations____________ */
+    .section-base-layout {
+        @apply  flex
+                flex-col
+                justify-center
+                items-center
+                text-center
+                px-8
+                py-10
+                md:py-24;
+    }
+    .wrapper {
+        @apply  flex
+                flex-col
+                justify-center
+                items-center
+                py-8
+                w-9/12
+                lg:w-8/12;
+    }
+    .btn-base {
+        @apply  flex
+                flex-row
+                border-8
+                border-solid
+                rounded-lg
+                border-green
+                font-semibold
+                text-3xl
+                text-green
+                tracking-wider
+                py-3
+                px-10
+                lg:py-4
+                lg:px-16
+                lg:text-6xl ;
+    }
+    .btn-hover {
+        @apply  transition duration-500
+                ease-in-out
+                transform
+                hover:-translate-y-1
+                hover:scale-110
+                hover:bg-green
+                hover:text-darkTan;
+    }
+    .btn-hover-2 {
+        @apply  transition duration-500
+                ease-in-out
+                transform
+                hover:-translate-y-1
+                hover:scale-110
+                hover:bg-darkTan
+                hover:text-green;
+    }
+    .link-hover {
+        @apply hover:underline
+    }
+
+/* ____________1.Header/Nav Styles____________ */
+    .mobile-head {
+        @apply  flex
+                flex-row
+                fixed
+                bg-darkTan
+                z-40;
+    }
+    .mobile-logo-container {
+        @apply  flex
+                justify-center
+                w-screen
+                bg-darkTan
+                font-primaryFont;
+    }
+    .mobile-logo {
+        @apply  block
+                text-center
+                font-bold
+                text-green
+                text-2xl
+                sm:text-3xl
+                font-primaryFont
+                z-50
+                w-60
+                py-4 ;
+    }
+    .hamburger-container{
+        @apply  z-50
+                fixed top-10
+                right-10
+                text-green;
+    }
+    .faBars {
+        @apply  fixed text-2xl;
+    }
+    .mobile-nav-link-divider {
+        @apply  border-t-2
+                w-screen
+                text-green;
+    }
+    .desktop-nav-link-divider {
+        @apply  border-l-4
+                border-green
+                w-4
+                py-8;
+    }
+    .mobile-nav-li {
+        @apply  font-bold
+                text-green
+                p-4
+                text-center
+                sm:text-xl
+                font-primaryFont;
+    }
+    .desktop-nav-li {
+        @apply  font-bold
+                text-green
+                md:text-xl
+                lg:text-2xl
+                font-primaryFont;
+    }
+    .desktop-nav-a {
+        @apply  py-5
+                px-5;
+    }
+
+/* ____________2. About Section____________ */
+    .summary-section-p {
+       @apply   text-2xl
+                md:text-4xl
+                lg:text-5xl
+                text-lightTan;
+    }
+}
