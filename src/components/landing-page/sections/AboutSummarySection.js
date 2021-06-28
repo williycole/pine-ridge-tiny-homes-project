@@ -10,7 +10,7 @@ function AboutSummarySection() {
             </div>
             <div className="wrapper">
                 <h2 className="summary-section-p">
-                    This is the greatest humanitarian crisis in the Unites States today.
+                    This is the greatest humanitarian crisis in the United States today.
                 </h2>
             </div>
             <div className="wrapper">
