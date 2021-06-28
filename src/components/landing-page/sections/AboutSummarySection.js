@@ -16,7 +16,7 @@ function AboutSummarySection() {
             <div className="wrapper">
                 <h2 className="summary-section-p">
                     The Sioux of Pine Ridge have endured the harshest conditions of human
-                    suffering in the Unites States for over 100 years.
+                    suffering in the United States for over 100 years.
                 </h2>
             </div>
         </section>
