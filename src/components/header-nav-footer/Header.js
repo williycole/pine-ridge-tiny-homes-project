@@ -1,41 +1,22 @@
 
 
-import React from 'react';
+import {useState, useEffect} from 'react';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 
-//Change to functional component to use hooks
-class Nav extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        isDesktop: false
-      };
-      this.updatePredicate = this.updatePredicate.bind(this);
-    }
+function Nav(props){
+const [width, setWidth] = useState(window.innerWidth);
+const breakpoint = 768;
 
-    componentDidMount() {
-      this.updatePredicate();
-      window.addEventListener("resize", this.updatePredicate);
-    }
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
 
-    componentWillUnmount() {
-      window.removeEventListener("resize", this.updatePredicate);
-    }
-
-    updatePredicate() {
-      this.setState({ isDesktop: window.innerWidth > 768});
-    }
-
-    render() {
-      const isDesktop = this.state.isDesktop;
-
-      return (
-        <div id="nav-container">
-            {isDesktop ? (<DesktopNav/>) : (<MobileNav/>)}
-        </div>
-      );
-    }
-  }
+  return (
+    <div id="nav-container">
+        {width < breakpoint ? (<MobileNav/>)  : (<DesktopNav/>)}
+    </div>
+  );
+}
 export default Nav;
 
