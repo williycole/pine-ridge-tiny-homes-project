@@ -34,9 +34,9 @@ function MobileNav() {
                   <li className="mobile-nav-li">Contact</li>
                 </a>
               <span className="mobile-nav-link-divider"/>
-                {/* <a href="#contact-section"  className="nav-link border-b-2 w-screen text-green">
+                <a href="https://pine-ridge-tiny-homes-project-blog.netlify.app/"  className="nav-link border-b-2 w-screen text-green">
                   <li className="mobile-nav-li">Blog</li>
-                </a> */}
+                </a>
             </ul>
          </nav>
       </header>

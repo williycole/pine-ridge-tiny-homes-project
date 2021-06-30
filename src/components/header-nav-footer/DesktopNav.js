@@ -18,10 +18,10 @@ function DesktopNav () {
           <a href="#contact-section"  className="desktop-nav-a">
             <li className="desktop-nav-li link-hover">Contact</li>
           </a>
-        {/* <span className="desktop-nav-link-divider "/>
-          <a href="#contact-section"  className="desktop-nav-a">
+        <span className="desktop-nav-link-divider "/>
+          <a href="https://pine-ridge-tiny-homes-project-blog.netlify.app/"  className="desktop-nav-a">
             <li className="desktop-nav-li link-hover">Blog</li>
-          </a> */}
+          </a>
       </ul>
     </header>
   )
